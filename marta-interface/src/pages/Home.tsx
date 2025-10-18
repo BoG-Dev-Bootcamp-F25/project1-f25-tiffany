@@ -1,12 +1,16 @@
 import "../pages/Home.css";
+import { useNavigate } from "react-router-dom";
 import martaImg from "../images/marta.jpeg";
 
 const Home = () => {
+    const navigate = useNavigate();
     return (
       <div className="homePage">
         <div className="header">
           <h1>MARTA</h1>
-          <button className="about-btn">About MARTA</button>
+          <button onClick={() => navigate("/about")} className="about-btn">
+            About MARTA
+          </button>
         </div>
         <div className="homeContent">
           <div className="leftSide">
@@ -26,7 +30,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <img src={martaImg} alt="marta train" className="marta"/>
+          <img src={martaImg} alt="marta train" className="marta" />
         </div>
       </div>
     );
