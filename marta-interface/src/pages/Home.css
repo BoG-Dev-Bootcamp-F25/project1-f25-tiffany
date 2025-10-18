@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(194, 215, 234);
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    color: black;
+    border-bottom: 2px rgb(128, 128, 128) solid;
+}
+
+.header h1 {
+    grid-column: 2; 
+}
+
+.about-btn {
+    align-self: center;
+    justify-self: end;
+    grid-column: 3;
+    margin: 20px;
+}
+
+.leftSide h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.routes {
+    display: flex;
+    flex-direction: column;
+}
+
+.routes button {
+    text-align: left;
+    padding: 20px;
+    margin: 12px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.homeContent {
+    display: flex;
+    color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: -10%;
+}
+
+.marta {
+    width: 50%;
+    justify-self: center;
+    margin: 20px;
+    height: 60%;
+}
